@@ -1,0 +1,7 @@
+[
+    {"label": "Accueil",  "href": "#"},
+    {"label": "Projets",  "href": "#"},
+    {"label": "Tâches",   "href": "#"},
+    {"label": "Équipe",   "href": "#"},
+    {"label": "Messages", "href": "#"}
+]

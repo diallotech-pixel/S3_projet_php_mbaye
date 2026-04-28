@@ -1,0 +1,21 @@
+            PROJET PHP 
+Nom : DIALLO
+Prénom: Souleymana
+Email: s.diallo6_340@isepat.edu.sn
+
+            Introduction
+1.	Quels sont les services à installer pour faire fonctionner des sites web PHP ?
+    a.	Un serveur web HTTP type Apache
+2.	Sur quels OS s’exécute PHP ?
+    d.	Sur l’OS du navigateur
+3.	Quelle est la syntaxe pour insérer du code PHP dans une page ?
+    c.	<?php ?>
+4.	Quelle est l’URL pour atteindre la page PHP appelée index et située à la racine du serveur web local ?
+    b.	http://localhost/index.php
+5.	Comment rattacher à une page HTML 5 une feuille de style CSS ?
+    c.	Avec une balise <link rel="stylesheet">
+6.	Parmi les propositions suivantes, quelle syntaxe est valide pour injecter du code JavaScript présent dans une bibliothèque util.js ?
+    d.	<script src="util.js"></script>
+
+
+
