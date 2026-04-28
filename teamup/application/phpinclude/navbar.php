@@ -1,7 +1,15 @@
 <?php
-// Lire le menu depuis le fichier JSON
 $json = file_get_contents(__DIR__ . '/menu.json');
 $menu = json_decode($json, true);
+
+$themes = [
+    0 => 'Thème',
+    1 => 'Clair',
+    2 => 'Foncé',
+];
+
+// Récupérer le thème actuel (passé depuis index.php)
+$theme_actuel = isset($theme) ? $theme : 0;
 ?>
 <nav class="navbar navbar-expand-lg" style="background-color: #a8d8ea;">
     <div class="container-fluid">
@@ -13,7 +21,7 @@ $menu = json_decode($json, true);
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav me-auto">
                 <?php foreach ($menu as $item): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo $item['href']; ?>">
@@ -22,6 +30,23 @@ $menu = json_decode($json, true);
                     </li>
                 <?php endforeach; ?>
             </ul>
+
+            <!-- Formulaire sélection du thème -->
+            <form method="POST" action="index.php" class="d-flex align-items-center ms-3">
+                <select
+                    name="lst_theme"
+                    class="form-select form-select-sm"
+                    onchange="this.form.submit()">
+                    <?php foreach ($themes as $valeur => $libelle): ?>
+                        <option
+                            value="<?php echo $valeur; ?>"
+                            <?php echo ($theme_actuel == $valeur) ? 'selected' : ''; ?>>
+                            <?php echo $libelle; ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </form>
+
         </div>
     </div>
 </nav>

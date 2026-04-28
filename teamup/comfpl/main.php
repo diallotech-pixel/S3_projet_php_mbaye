@@ -91,7 +91,7 @@ class FPLGlobal
 
     public static function get_theme_uri()
     {
-        return 'themes/default';
+        return 'themes/' . self::$theme;
     }
 
     public static function set_theme($theme)

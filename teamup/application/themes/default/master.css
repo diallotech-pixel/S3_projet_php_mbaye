@@ -1,0 +1,13 @@
+/* Thème clair (default) */
+nav.navbar {
+    background-color: #a8d8ea !important;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.card {
+    background-color: #f8f9fa;
+}

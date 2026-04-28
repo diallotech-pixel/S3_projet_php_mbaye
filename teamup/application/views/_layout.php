@@ -7,6 +7,7 @@
     <?php require_once __DIR__ . '/../../comfpl/main.php'; ?>
     <?php FPLGlobal::render_bundle_css(); ?>
     <?php FPLGlobal::render_bundle_script(); ?>
+    <link rel="stylesheet" href="<?php echo FPLGlobal::get_theme_uri(); ?>/master.css">
 </head>
 
 <body>
